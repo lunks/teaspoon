@@ -51,7 +51,7 @@ module Teaspoon
 
     def self.inject_instrumentation
       Sprockets::Environment.send(:include, Teaspoon::SprocketsInstrumentation)
-      Sprockets::Index.send(:include, Teaspoon::SprocketsInstrumentation)
+      #Sprockets::Index.send(:include, Teaspoon::SprocketsInstrumentation)
     end
 
     def self.prepend_routes(app)
